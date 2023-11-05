@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tabWrap">
+        <div class="tab" id="mainTab">
+            <div class="incomeWrap">
+                <div>Income:</div>
+                <div id="incomeAmount">$1</div>
+            </div>
+            
+            <div class="moneyWrap" id="moneyWrap">
+                
+                <div id="moneyAmount">$0</div>
+                
+            </div>
+            
+            <div id="statusMessage">You are constantly struggling for food and shelter.</div>
+            <div id="messageBox">
+                <div>--------------------</div>
+                <div id="itemMessage">You can buy a pair of Jordans</div>
+                <button class="itemBtn" onclick="buyCurrentItem();">Buy</button>
+            </div>
+            <button class="moneyBtn" onclick="earnMoney();">Click For Money</button>
+            <button class="bonusBtn" onclick="bonusClickEarn();">Bonus</button>
+            <div class="bonusClickBox">
+                <p class="mainText1" id="bcAmount">0 Bonus Clicks</p>
+                <p class="mainText2" id="bcRate">+0 per click</p>
+            </div>
+            
+        </div>
+        <div class="tab" id="upgradeTab">
+            <div class="boxWrap">
+                <div class="box">
+                    <h2>Income Boost</h2>
+                    <div>Increase your income by 10%</div>
+                </div>
+                    <button id="ibBtn" onclick="incomeBoostBuy();">$100</button>
+            </div>
+            <div class="boxWrap">
+                <div class="box">
+                    <h2>Bonus Click</h2>
+                    <div>Increase your bonus click rate by 0.1</div>
+                </div>
+                    <button id="bcBtn" onclick="bonusClickBuy();">$100</button>
+            </div>
+        </div>
+        <div class="tab" id="casinoTab">
+            <div class="d">
+                <div>$</div>
+                <div id="moneyVal">100</div>
+            </div>
+            
+            <input id="input" type="number">
+            <div class="boxes">
+                <div id="box1"></div>
+                <div id="box2"></div>
+                <div id="box3"></div>
+            </div>
+        
+            <button class="casinoBtn" onclick="clic();">GAMBLE</button>
+        </div>
+    </div>
+    
+    <div class="UI" id="UI">
+        <div id="upgradeBtn">UPGRADE</div>
+        <div id="mainBtn">MAIN</div>
+        <div id="casinoBtn">CASINO</div>
+    </div>
+
+
+    <script type="text/javascript" src="message.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="casino.js"></script>
+</body>
+</html>

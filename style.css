@@ -1,0 +1,273 @@
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.tab{
+    width: 600px;
+    height: 337.5px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-bottom: none;
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#mainTab{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+.bonusClickBox{
+    display: flex;
+    margin: 10px;
+}
+.mainText1{
+
+
+    margin: 5px;
+}
+
+.mainText2{
+
+    margin: 5px;
+}
+.tabWrap{
+    width: 600px;
+    height: 337.5px;
+
+}
+.bonusBtn{
+    bottom: 70px;
+    margin: 5px;
+    margin-top: 10px;
+    border: 1px solid lightblue;
+    background-color: lightskyblue;
+    box-shadow: 0 2px 0 0 rgb(95, 95, 95);
+    border-radius: 10px;
+}
+.bonusBtn:hover{
+    transition: all ease 0.2s;
+    background-color: royalblue;
+    cursor: pointer;
+    color: white;
+}
+.bonusBtn:active{
+    transition: all ease 0.2s;
+    box-shadow: 0 0px 0 0 rgb(95, 95, 95);
+    transform: translateY(2px);
+}
+.moneyBtn{
+    padding:40px 15px;
+    position: relative;
+    border: 2px solid green;
+    background: linear-gradient(lightgreen, green);
+    color:rgb(255, 255, 107);
+    box-shadow: 0 5px 0 0 rgb(95, 95, 95);
+    border-radius: 10px;
+    margin: 7px;
+    
+}
+.moneyBtn:hover{
+    transition: all ease 0.5s;
+    background: linear-gradient(yellow 0%, lightgreen 25%, green 100%);
+    cursor: pointer;
+}
+.moneyBtn:active{
+    transition: all ease 0.5s;
+    box-shadow: 0 0px 0 0 rgb(95, 95, 95);
+    transform: translateY(5px);
+}
+#moneyAmount{
+    font-size: 20px;
+}
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+#box1{
+    width: 175px;
+    height: 250px;
+    margin: 2px;
+    border: 1px solid black;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box2{
+    width: 175px;
+    height: 250px;
+    margin: 2px;
+    border: 1px solid black;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#box3{
+    width: 175px;
+    height: 250px;
+    margin: 2px;
+    border: 1px solid black;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.casinoBtn{
+    border: none;
+    background-color: rgb(194, 194, 0);
+    width: 65px;
+    height: 50px; 
+    padding: 2px;
+}
+.d{
+    display: flex;
+    flex-direction: row;
+}
+#casinoTab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#messageBox{
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    align-items: center;
+    visibility: hidden;
+    height: 0;
+}
+#itemMessage{
+    margin: 3px;
+}
+.itemBtn{
+    margin: 3px;
+    background-color: tomato;
+    box-shadow: 0 2px 0 0 rgb(95, 95, 95);
+    border-radius: 10px;
+    border: 1px solid red;
+}
+.itemBtn:hover{
+    transition: all ease 0.15s;
+    background-color: red;
+    cursor: pointer;
+}
+.itemBtn:active{
+    transition: all ease 0.15s;
+    box-shadow: 0 0px 0 0 rgb(95, 95, 95);
+    transform: translateY(2px);
+}
+#moneyAmount{
+    top: 30px;
+}
+.boxWrap{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    border-top: 2px solid black;
+    padding: 20px;
+    align-items: center;
+}
+.boxWrap:last-of-type{
+    border-bottom: 2px solid black;
+}
+.boxWrap button{
+    padding: 20px 10px;
+
+}
+.moneyWrap{
+    position: relative;
+}
+.moneyEffect{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    animation: moneyEffect 0.3s;
+}
+
+@keyframes moneyEffect {
+    0%{
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    100%{
+        transform: translate(0, -50px);
+        opacity: 0;
+    }
+}
+
+.UI{
+    display: grid;
+    width: 600px;
+    grid-template-columns: 1fr 1fr 1fr;
+    transition: 0.3s;
+}
+.UIU{
+    grid-template-columns: 1.4fr 1fr 1fr;
+}
+.UIM{
+    grid-template-columns: 1fr 1.4fr 1fr;
+}
+.UIC{
+    grid-template-columns: 1fr 1fr 1.4fr;
+}
+.UIU #upgradeBtn{
+    border-top: none;
+}
+.UIM #mainBtn{
+    border-top: none;
+}
+.UIC #casinoBtn{
+    border-top: none;
+}
+.UI div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid black;
+}
+#incomeAmount{
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+.incomeWrap{
+    display:flex;
+    flex-direction: row;
+}
+.incomeWrap div{
+    font-size: 20px;
+    margin: 3px;
+}
+
+@media (max-width: 500px){
+    .tab, .tabWrap, .UI{
+        width: 100vw;
+        
+    }
+    .tab, .tabWrap{
+        height: 75vh;
+    }
+    .boxes{
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    #mainTab{
+        justify-content: center;
+    }
+}
